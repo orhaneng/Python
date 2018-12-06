@@ -1,0 +1,36 @@
+Asset Trading Application:
+
+An application for Asset Trading allowing users to deposit currencies in USD and then purchase various assets.
+Each unique asset class is an inheritance from AssetBase.
+Assets are created via the factory pattern inherited from the Superclass "AssetBase".
+Polymorphism allows us to keep track of each individual asset attributes and methods without declaring them.
+
+Usage:
+Launch TradeMangement.py
+First time users enter 1 - to create new customer account
+follow rest of the steps 2,3,4, etc to initiate a transaction.
+
+User Interface:
+TraderUI.py:
+an abstracted Command line interface for Asset Trading.  Calls the encapsulated TradeManagement class.
+
+AssetBase (Abstracted Superclass):
+Defines the base class for all assets created via the factory pattern.
+
+Unique Asset Classes:
+Bitcoin.py
+Bond.py
+Currency.py
+Etherium.py
+Ripple.py
+Stocks.py
+
+TradeManagement.py:
+Manages user authentication, sessions, transactions, and communications between the User Interface and data.
+
+Account.py + Customer.py:
+Customer.py : Contains all the classes and initialization for creating customer accounts, setting and editing personal info.
+Account.py : Classes for a Customer's asset ownership
+
+Testing:
+Transactions.py
